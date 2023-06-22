@@ -4,7 +4,6 @@ image:
 tasks:    
   - name: 🛠️ Init workspace
     command: |
-      echo hello
       echo $GCP_SERVICE_KEY > .gcloud-conf.json
       gcloud auth activate-service-account --key-file .gcloud-conf.json
       rm -f .gcloud-conf.json
